@@ -20,6 +20,7 @@ public class FreeCrmTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
+		System.setBinary("/usr/bin/chromedriver");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
